@@ -8,7 +8,13 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-jet-welcome />
+                {{-- @can('comprar articulos')
+                    <h1>Cliente</h1>
+                @endcan
+
+                @can('listar pedidos')
+                    <h1>Tienda</h1>
+                @endcan --}}
             </div>
         </div>
     </div>
