@@ -14,4 +14,5 @@ Pasos para instalar:
     php artisan migrate --seed
 
 Para iniciar el servidor de desarrollo, ejecutar:
+
     php artisan serve
