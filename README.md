@@ -1,6 +1,7 @@
-requiere:
+Requisitos de despliegue:
 
-- Node 18.9.0
+- Laravel 9
+- Node 18.7.0
 - Composer latest
 
 
