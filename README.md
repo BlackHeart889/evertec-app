@@ -13,6 +13,13 @@ Pasos para instalar:
     php artisan key:generate
     php artisan migrate --seed
 
+Añade las siguientes lineas al archivo .env
+
+    PCT_LOGIN="Su Login"
+    PCT_SECRET_KEY="Su llave secreta"
+    PCT_BASE_URL="Su URL Base"
+
+
 Para iniciar el servidor de desarrollo, ejecutar:
 
     php artisan serve
