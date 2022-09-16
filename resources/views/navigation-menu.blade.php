@@ -15,19 +15,7 @@
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-jet-nav-link>
-
-                    @can('comprar articulos')
-                        <x-jet-nav-link href="">
-                            {{ __('Compras') }}
-                        </x-jet-nav-link>
-                    @endcan
-                    
-                    @can('listar pedidos')
-                        <x-jet-nav-link href="">
-                            {{ __('Pedidos') }}
-                        </x-jet-nav-link>
-                    @endcan
-                    
+                                        
                 </div>
             </div>
 

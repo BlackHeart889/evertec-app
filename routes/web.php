@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\VerifyPaymentController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,4 +27,9 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::controller(VerifyPaymentController::class)->group(function () {
+        Route::get('/verify-payment/{id}', 'result')
+                ->name('verify-payment');
+    });
 });
