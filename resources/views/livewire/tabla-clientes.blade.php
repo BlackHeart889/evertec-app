@@ -1,7 +1,8 @@
 <div>
+  @include('livewire.modals.resumen-compra')
     <div class="d-flex flex-row-reverse">
         <div class="p-2">
-            <button wire:click='comprar' type="button" class="btn btn-primary">Comprar producto</button>
+            <button data-toggle="modal" data-target="#modalResumen" type="button" class="btn btn-primary">Comprar producto</button>
         </div>         
     </div>
     @if(count($orders) > 0)

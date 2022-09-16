@@ -22,6 +22,12 @@ class TablaClientes extends Component
      */
     use WithPagination;
 
+    public function mount(){
+        $user = Auth::user();
+        $this->nombre = $user->name;
+        $this->email = $user->email;
+        $this->celular = $user->mobile;
+    }
     public function render()
     {
         $orders = DB::table('orders')
@@ -110,5 +116,9 @@ class TablaClientes extends Component
         if(isset($paymentOrder)){
             return redirect()->away($paymentOrder->process_url);
         }
+    }
+
+    public function modificarPerfil(){
+        return redirect()->route('profile.show');
     }
 }
