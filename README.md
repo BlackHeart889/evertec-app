@@ -3,6 +3,7 @@ Requisitos de despliegue:
 - Laravel 9
 - Node 18.7.0
 - Composer latest
+- PostgreSQL o MySQL
 
 
 Pasos para instalar:
